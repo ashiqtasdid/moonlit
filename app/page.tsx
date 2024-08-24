@@ -8,6 +8,8 @@ import Feature4 from "@/components/feature4";
 import Pricing from "@/components/pricing";
 import Packages from "@/components/packages";
 import Prices from "@/components/prices";
+import Review from "@/components/review";
+import Card from "@/components/card";
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
       <Feature4 />
       <Pricing />
       <Prices />
+      <Review />
+      <Card />
     </div>
   );
 }
