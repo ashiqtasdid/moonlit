@@ -1,15 +1,14 @@
 import Nav from "@/components/nav";
 import Hero from "@/components/hero";
 import Features from "@/components/features";
-import Feature1 from "@/components/feature1";
-import Feature2 from "@/components/feature2";
-import Feature3 from "@/components/feature3";
-import Feature4 from "@/components/feature4";
 import Pricing from "@/components/pricing";
 import Packages from "@/components/packages";
 import Prices from "@/components/prices";
 import Review from "@/components/review";
 import Card from "@/components/card";
+import Feature from "@/components/feature";
+import Plan from "@/components/plan";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -20,14 +19,12 @@ export default function Home() {
       <Hero />
       <Packages />
       <Features />
-      <Feature1 />
-      <Feature2 />
-      <Feature3 />
-      <Feature4 />
+      <Feature />
       <Pricing />
       <Prices />
       <Review />
-      <Card />
+      <Plan />
+      <Footer />
     </div>
   );
 }
