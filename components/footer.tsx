@@ -35,7 +35,11 @@ const Footer = () => {
         <div>
           <ul className="flex justify-center md:justify-end text-xl font-semibold text-gray-400 space-x-3">
             <li>
-              <a href="https://discord.com">
+              <a
+                href="
+              https://discord.gg/GRmdaV4w"
+                target="_blank"
+              >
                 <FaDiscord />
               </a>
             </li>

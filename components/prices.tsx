@@ -1,3 +1,4 @@
+"use client";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -9,6 +10,10 @@ import {
 } from "@/components/ui/carousel";
 
 const Prices = () => {
+  const handleOrderClick = (planNumber: number) => {
+    console.log(planNumber);
+  };
+
   return (
     <div className="px-4 sm:px-6 lg:px-8">
       <div className="text-center py-8 text-2xl sm:text-3xl font-bold text-white">
@@ -40,7 +45,10 @@ const Prices = () => {
             ))}
           </div>
           <div className="pb-4 pt-24 md:pt-36 mx-3">
-            <button className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+            <button
+              onClick={() => handleOrderClick(1)}
+              className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+            >
               Order now
             </button>
           </div>
@@ -74,7 +82,10 @@ const Prices = () => {
             ))}
           </div>
           <div className="py-4 mx-3">
-            <button className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+            <button
+              onClick={() => handleOrderClick(2)}
+              className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+            >
               Order now
             </button>
           </div>
@@ -108,7 +119,10 @@ const Prices = () => {
             ))}
           </div>
           <div className="py-4 mx-3">
-            <button className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+            <button
+              onClick={() => handleOrderClick(3)}
+              className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+            >
               Order now
             </button>
           </div>
@@ -147,14 +161,16 @@ const Prices = () => {
                     ))}
                   </div>
                   <div className="pb-4 pt-24 md:pt-36 mx-3">
-                    <button className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+                    <button
+                      onClick={() => handleOrderClick(1)}
+                      className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+                    >
                       Order now
                     </button>
                   </div>
                 </CardContent>
               </Card>
             </CarouselItem>
-
             <CarouselItem>
               <Card className="w-full h-[580px] bg-blue-900 text-white rounded-xl hover:ring-2 transition hover:ring-emerald-600">
                 <CardContent className="p-0">
@@ -186,14 +202,16 @@ const Prices = () => {
                     ))}
                   </div>
                   <div className="py-4 mx-3">
-                    <button className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+                    <button
+                      onClick={() => handleOrderClick(2)}
+                      className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+                    >
                       Order now
                     </button>
                   </div>
                 </CardContent>
               </Card>
             </CarouselItem>
-
             <CarouselItem>
               <Card className="w-full h-[580px] bg-blue-900 text-white rounded-xl hover:ring-2 transition hover:ring-emerald-600">
                 <CardContent className="p-0">
@@ -225,7 +243,10 @@ const Prices = () => {
                     ))}
                   </div>
                   <div className="py-4 mx-3">
-                    <button className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+                    <button
+                      onClick={() => handleOrderClick(3)}
+                      className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+                    >
                       Order now
                     </button>
                   </div>

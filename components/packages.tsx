@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const Packages = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-36 md:gap-6 p-10">
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}

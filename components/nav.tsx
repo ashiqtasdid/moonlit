@@ -4,14 +4,37 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
+import StepModal from "@/components/modal";
 
 const Nav = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const controls = useAnimation();
 
+  const handleOpenModal = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    setTimeout(() => {
+      setModalOpen(true);
+    }, 300); // Adjust the timeout if needed
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
   const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    setTimeout(() => {
+      setModalOpen(true);
+    }, 300); // Adjust the timeout if needed
   }, []);
 
   const handleScroll = useCallback(() => {
@@ -72,9 +95,13 @@ const Nav = () => {
             <button className="bg-white font-semibold text-sm text-black px-2.5 py-1.5 rounded-2xl">
               Log in
             </button>
-            <button className="bg-emerald-700 text-sm font-semibold text-white px-2.5 py-1.5 rounded-2xl">
+            <button
+              onClick={handleOpenModal}
+              className="bg-emerald-700 text-sm font-semibold text-white px-2.5 py-1.5 rounded-2xl"
+            >
               Create server
             </button>
+            <StepModal isOpen={isModalOpen} onClose={handleCloseModal} />
           </div>
           <button
             onClick={toggleMenu}
@@ -131,7 +158,12 @@ const Nav = () => {
 
             <div className="flex justify-center py-6">
               <Link href="/" onClick={toggleMenu}>
-                <Image src="/logo.svg" width={50} height={50} alt="logo" />
+                <Image
+                  src="/assets/logo.png"
+                  width={50}
+                  height={50}
+                  alt="logo"
+                />
               </Link>
             </div>
 
@@ -157,14 +189,12 @@ const Nav = () => {
                 </Link>
               </li>
             </ul>
-
-            <div className="w-full flex justify-center py-6">
+            {/* WARNING: THIS IS A PLACEHOLDER, DO NOT REMOVE OR MAKE IT VISIBLE */}
+            <div className="w-full invisible justify-center py-6">
               <button
                 className="bg-emerald-700 text-sm text-white px-6 py-2 rounded-2xl"
                 onClick={toggleMenu}
-              >
-                Create server
-              </button>
+              ></button>
             </div>
           </motion.div>
         )}

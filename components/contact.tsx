@@ -34,7 +34,11 @@ const ClipPathLinks: React.FC = () => {
       </div>
       <div className="grid grid-cols-2 divide-x divide-neutral-600">
         <LinkBox Icon={SiTrustpilot} href="#" />
-        <LinkBox Icon={SiDiscord} href="#" />
+        <LinkBox
+          Icon={SiDiscord}
+          href="
+        https://discord.gg/GRmdaV4w"
+        />
       </div>
     </div>
   );

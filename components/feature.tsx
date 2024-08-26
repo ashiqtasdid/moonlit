@@ -19,8 +19,8 @@ const Feature = () => {
                 {/* Replace with actual icons/images */}
                 <div className="w-6 h-6 bg-gray-500 rounded-full mr-4"></div>
                 <div>
-                  <p>Lilypad</p>
-                  <p className="text-sm text-gray-400">$2.75/GB</p>
+                  <p>Moonlit Hosting</p>
+                  <p className="text-sm text-gray-400">$2/GB</p>
                 </div>
               </div>
               <div className="space-y-1 w-full md:w-auto">
