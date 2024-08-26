@@ -5,7 +5,7 @@ import Pricing from "@/components/pricing";
 import Packages from "@/components/packages";
 import Prices from "@/components/prices";
 import Review from "@/components/review";
-import Card from "@/components/card";
+import Banner from "@/components/card";
 import Feature from "@/components/feature";
 import Plan from "@/components/plan";
 import Footer from "@/components/footer";
@@ -24,6 +24,7 @@ export default function Home() {
       <Prices />
       <Review />
       <Plan />
+      <Banner />
       <Footer />
     </div>
   );

@@ -2,44 +2,46 @@
 import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   const [scrolled, setScrolled] = useState(false);
   const controls = useAnimation();
 
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+  const toggleMenu = useCallback(() => {
+    setIsOpen((prev) => !prev);
+  }, []);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+  const handleScroll = useCallback(() => {
+    setScrolled(window.scrollY > 50);
   }, []);
 
   useEffect(() => {
-    controls.start({ opacity: scrolled ? 1 : 1 });
+    const handleScrollDebounced = () => {
+      requestAnimationFrame(handleScroll);
+    };
+    window.addEventListener("scroll", handleScrollDebounced);
+    return () => window.removeEventListener("scroll", handleScrollDebounced);
+  }, [handleScroll]);
+
+  useEffect(() => {
+    controls.start({ opacity: 1 });
   }, [scrolled, controls]);
 
   return (
     <motion.nav
-      className={`py-3 w-full fixed top-0 z-10 text-white ${scrolled ? "backdrop-filter backdrop-blur-md border-b-2 border-gray-700" : "bg-transparent"} transition-all duration-300`}
+      className={`py-3 w-full fixed top-0 z-10 text-white ${
+        scrolled
+          ? "backdrop-filter backdrop-blur-md border-b-2 border-gray-700"
+          : "bg-transparent"
+      } transition-all duration-300`}
       animate={controls}
     >
       <div className="flex justify-between items-center mx-10">
         <div className="flex py-1 space-x-5 items-center">
-          <Link href="/">
+          <Link href="/" aria-label="Home">
             <motion.div
               whileHover={{ scale: 1.2, rotate: 360 }}
               transition={{ duration: 1 }}
@@ -54,11 +56,8 @@ const Nav = () => {
           <Link href="/" className="font-semibold">
             Home
           </Link>
-          <Link href="/servers" className="font-semibold">
+          <Link href="/#pricing" className="font-semibold">
             Pricing
-          </Link>
-          <Link href="/blog" className="font-semibold">
-            Blog
           </Link>
           <Link href="/about" className="font-semibold">
             About
@@ -77,7 +76,11 @@ const Nav = () => {
               Create server
             </button>
           </div>
-          <button onClick={toggleMenu} className="md:hidden focus:outline-none">
+          <button
+            onClick={toggleMenu}
+            className="md:hidden focus:outline-none"
+            aria-label="Toggle menu"
+          >
             <svg
               className="w-6 h-6"
               fill="none"
@@ -108,6 +111,7 @@ const Nav = () => {
             <button
               onClick={toggleMenu}
               className="absolute top-6 right-6 text-white focus:outline-none"
+              aria-label="Close menu"
             >
               <svg
                 className="w-8 h-8"
@@ -140,11 +144,6 @@ const Nav = () => {
               <li>
                 <Link href="/servers" onClick={toggleMenu}>
                   Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" onClick={toggleMenu}>
-                  Blog
                 </Link>
               </li>
               <li>

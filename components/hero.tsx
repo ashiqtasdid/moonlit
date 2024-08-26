@@ -2,6 +2,7 @@
 import React from "react";
 import { motion as m } from "framer-motion";
 import styles from "./hero.module.css";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -33,12 +34,16 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="pt-5"
         >
-          <button className="text-sm bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2 px-4 rounded-full mt-5">
-            Minecraft Hosting 〉
-          </button>
-          <button className="text-sm bg-gray-500 ring-2 ring-gray-600 text-white bg-opacity-50 hover:ring-gray-400 font-bold py-2 px-4 rounded-full mt-5 ml-5">
-            Managed 〉
-          </button>
+          <Link href={"/create-minecraft-server"}>
+            <button className="text-sm bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2 px-4 rounded-full mt-5">
+              Minecraft Hosting 〉
+            </button>
+          </Link>
+          <Link href={"/create-minecraft-server"}>
+            <button className="text-sm bg-gray-500 ring-2 ring-gray-600 text-white bg-opacity-50 hover:ring-gray-400 font-bold py-2 px-4 rounded-full mt-5 ml-5">
+              Managed 〉
+            </button>
+          </Link>
         </m.div>
       </div>
     </div>
