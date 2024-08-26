@@ -39,7 +39,7 @@ const ServerCart: React.FC = () => {
             onChange={handleMemoryChange}
             className="w-full appearance-none h-2 rounded-lg"
             style={{
-              background: `linear-gradient(to right, #22c55e ${((memory - 4) / 28) * 100}%, #4b5563 0%)`,
+              background: `linear-gradient(to right, #3b82f6 ${((memory - 4) / 28) * 100}%, #4b5563 0%)`,
               WebkitAppearance: "none",
             }}
           />
@@ -51,7 +51,7 @@ const ServerCart: React.FC = () => {
               <option key={mark} value={mark} label={`${mark}GB`} />
             ))}
           </datalist>
-          <div className="mt-2 text-green-500">
+          <div className="mt-2 text-blue-500">
             {memory}GB Premium Minecraft
           </div>
         </div>
@@ -67,7 +67,7 @@ const ServerCart: React.FC = () => {
             onChange={handleCoresChange}
             className="w-full appearance-none h-2 rounded-lg"
             style={{
-              background: `linear-gradient(to right, #22c55e ${((cores - 1) / 4) * 100}%, #4b5563 0%)`,
+              background: `linear-gradient(to right, #3b82f6 ${((cores - 1) / 4) * 100}%, #4b5563 0%)`,
               WebkitAppearance: "none",
             }}
           />
@@ -79,14 +79,14 @@ const ServerCart: React.FC = () => {
               <option key={mark} value={mark} label={`${mark}`} />
             ))}
           </datalist>
-          <div className="mt-2 text-green-500">{cores} Additional Threads</div>
+          <div className="mt-2 text-blue-500">{cores} Additional Threads</div>
         </div>
 
         <div className="flex justify-between items-center mt-8">
           <div className="text-xl font-semibold">
             ${totalPrice.toFixed(2)}/month
           </div>
-          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+          <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded">
             Order
           </button>
         </div>

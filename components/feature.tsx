@@ -24,13 +24,13 @@ const Feature = () => {
                 </div>
               </div>
               <div className="space-y-1 w-full md:w-auto">
-                <p className="text-green-400">AMD Ryzen 7950X</p>
+                <p className="text-blue-400">AMD Ryzen 7950X</p>
                 <MotionProgress
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
                   transition={{ duration: 1 }}
                   value={0}
-                  className="h-2 bg-green-500"
+                  className="h-2 bg-blue-500"
                 />
               </div>
             </li>

@@ -9,32 +9,32 @@ const Plan = () => {
         <div className="flex flex-col items-start">
           <h1 className="font-semibold pt-7 text-xl">
             Included with <br />
-            <span className="text-green-400">Every Plan</span>
+            <span className="text-blue-400">Every Plan</span>
           </h1>
         </div>
         <div className="flex items-center">
           <h2 className="flex font-semibold space-x-2">
-            <RiVerifiedBadgeFill className="text-green-400 mt-0.5" />
+            <RiVerifiedBadgeFill className="text-blue-400 mt-0.5" />
             <span>99.95% uptime SLA</span>
           </h2>
         </div>
         <div className="flex items-center">
           <h2 className="flex font-semibold space-x-2">
-            <RiVerifiedBadgeFill className="text-green-400 mt-0.5" />
+            <RiVerifiedBadgeFill className="text-blue-400 mt-0.5" />
             <span>5</span>
-            <SiTrustpilot className="text-green-400 text-xl mx-1" />
+            <SiTrustpilot className="text-blue-400 text-xl mx-1" />
             <span>support</span>
           </h2>
         </div>
         <div className="flex items-center">
           <h2 className="flex font-semibold space-x-2">
-            <RiVerifiedBadgeFill className="text-green-400 mt-0.5" />
+            <RiVerifiedBadgeFill className="text-blue-400 mt-0.5" />
             <span>Instant deployment</span>
           </h2>
         </div>
         <div className="flex items-center">
           <h2 className="flex font-semibold space-x-2">
-            <RiVerifiedBadgeFill className="text-green-400 mt-0.5" />
+            <RiVerifiedBadgeFill className="text-blue-400 mt-0.5" />
             <span>Upgrade at any time</span>
           </h2>
         </div>
@@ -45,30 +45,30 @@ const Plan = () => {
         <div className="flex flex-col items-start">
           <h1 className="font-semibold text-xl invisible">
             Included with <br />
-            <span className="text-green-400">Every Plan</span>
+            <span className="text-blue-400">Every Plan</span>
           </h1>
         </div>
         <div className="flex items-center">
           <h2 className="flex font-semibold space-x-2">
-            <RiVerifiedBadgeFill className="text-green-400 mt-0.5" />
+            <RiVerifiedBadgeFill className="text-blue-400 mt-0.5" />
             <span>Off-site backups</span>
           </h2>
         </div>
         <div className="flex items-center">
           <h2 className="flex font-semibold space-x-2">
-            <RiVerifiedBadgeFill className="text-green-400 mt-0.5" />
+            <RiVerifiedBadgeFill className="text-blue-400 mt-0.5" />
             <span>Additional ports</span>
           </h2>
         </div>
         <div className="flex items-center">
           <h2 className="flex font-semibold space-x-2">
-            <RiVerifiedBadgeFill className="text-green-400 mt-0.5" />
+            <RiVerifiedBadgeFill className="text-blue-400 mt-0.5" />
             <span>MySQL databases</span>
           </h2>
         </div>
         <div className="flex items-center">
           <h2 className="flex font-semibold space-x-2">
-            <RiVerifiedBadgeFill className="text-green-400 mt-0.5" />
+            <RiVerifiedBadgeFill className="text-blue-400 mt-0.5" />
             <span>24/7 monitoring</span>
           </h2>
         </div>
