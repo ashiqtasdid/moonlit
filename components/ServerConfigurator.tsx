@@ -3,8 +3,9 @@
 import React, { useState } from "react";
 
 const ServerCart: React.FC = () => {
-  const [memory, setMemory] = useState(4);
-  const [cores, setCores] = useState(2);
+  // Set default memory to 8 and cores to 1
+  const [memory, setMemory] = useState(8);
+  const [cores, setCores] = useState(1);
 
   const memoryPrice = memory * 2;
   const corePrice = Math.floor(cores / 2) * 10.29;

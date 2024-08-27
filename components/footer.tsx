@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p className="text-gray-700 mx-5 md:mx-10 text-center md:text-left text-sm font-semibold">
+        <p className="text-gray-700 mx-5 pt-5 md:mx-10 text-center md:text-left text-sm font-semibold">
           © 2024 Moonlit Hosting. All rights reserved.
         </p>
       </div>

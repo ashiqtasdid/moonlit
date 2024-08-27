@@ -36,12 +36,12 @@ const Hero = () => {
         >
           <Link href={"/create-minecraft-server"}>
             <button className="text-sm bg-sky-600 hover:bg-sky-800 text-white font-bold py-2 px-4 rounded-full mt-5">
-              Minecraft Hosting 〉
+              Minecraft Hosting 
             </button>
           </Link>
           <Link href={"/create-minecraft-server"}>
             <button className="text-sm bg-gray-500 ring-2 ring-gray-600 text-white bg-opacity-50 hover:ring-gray-400 font-bold py-2 px-4 rounded-full mt-5 ml-5">
-              Managed 〉
+              Managed 
             </button>
           </Link>
         </m.div>

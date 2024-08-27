@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import ContactC from "@/components/contact";
 import Plan from "@/components/plan";
 import Card from "@/components/card";
+import InfoGrid from "@/components/infoGrid";
 
 export default function Contact() {
   return (
@@ -16,7 +17,7 @@ export default function Contact() {
           Any questions or concerns? Don&apos;t hesitate to get in touch!
         </p>
       </div>
-      <ContactC />
+      <InfoGrid/>
       <Plan />
       <Card />
       <Footer />

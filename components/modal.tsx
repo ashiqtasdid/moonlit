@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface StepModalProps {
   isOpen: boolean;
@@ -43,9 +42,9 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   {/* Card 1 */}
                   <div
-                    className={`bg-gradient-to-b mx-2 my-2 from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-1 ${
+                    className={`bg-gradient-to-b mx-2 my-2 from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 1
-                        ? "border-2 border-blue-400"
+                        ? "ring-blue-400"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(1)}
@@ -62,9 +61,9 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                   </div>
                   {/* Card 2 */}
                   <div
-                    className={`bg-gradient-to-b  mx-2 my-2  from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-1 ${
+                    className={`bg-gradient-to-b  mx-2 my-2  from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 2
-                        ? "border-2 border-blue-400"
+                        ? "ring-blue-400"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(2)}
@@ -82,9 +81,9 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                   </div>
                   {/* Card 3 */}
                   <div
-                    className={`bg-gradient-to-b  mx-2 my-2  from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-1 ${
+                    className={`bg-gradient-to-b  mx-2 my-2  from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 3
-                        ? "border-2 border-blue-400"
+                        ? "ring-blue-400"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(3)}
@@ -102,9 +101,9 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                   </div>
                   {/* Card 4 - Custom */}
                   <div
-                    className={`bg-gradient-to-b mx-2 my-2 from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-1 ${
+                    className={`bg-gradient-to-b mx-2 my-2 from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 4
-                        ? "border-2 border-blue-400"
+                        ? "ring-blue-400"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(4)}

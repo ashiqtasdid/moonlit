@@ -9,18 +9,18 @@ const Banner: React.FC = () => {
         className="absolute inset-0 bg-cover bg-center rounded-xl"
         style={{ backgroundImage: "url('/assets/minecraft-4.jpeg')" }}
       >
-        <div className="absolute inset-0 bg-blue-950 bg-opacity-40 rounded-xl"></div>
+        <div className="absolute inset-0 bg-blue-950 bg-opacity-60 rounded-xl"></div>
       </div>
       <div className="relative flex flex-col md:flex-row items-center pt-4 md:pb-0 justify-between px-4 md:px-6 h-full">
-        <div className="flex-1 text-center md:text-left">
-          <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 md:mb-4">
+        <div className="flex-1 text-center pb-6 md:text-left">
+          <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 ">
             Get a server
           </h1>
           <h2 className="text-xl md:text-2xl -my-1 md:-my-3 font-bold text-white mb-4">
             <span className="text-white pr-1 md:pr-2">in</span>Seconds
           </h2>
         </div>
-        <div className="flex-none pb-4 md:pb-0 md:mt-0">
+        <div className="flex-none  md:pb-4 pb-4 md:mt-0">
           <Link href="/create-minecraft-server">
             <Button />
           </Link>

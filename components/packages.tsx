@@ -10,28 +10,30 @@ import Image from "next/image";
 
 const Packages = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-36 md:gap-6 p-10">
-      <motion.div
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1 }}
-      >
-        <Basic />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1 }}
-      >
-        <Premium />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1 }}
-      >
-        <Mixed />
-      </motion.div>
+    <div className="max-w-5xl mx-auto px-4 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-36 md:gap-6">
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+        >
+          <Basic />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+        >
+          <Premium />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+        >
+          <Mixed />
+        </motion.div>
+      </div>
     </div>
   );
 };
@@ -81,7 +83,7 @@ const Basic: React.FC = () => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative h-[28rem] w-[22rem] mx-auto rounded-xl transition-transform hover:scale-105"
+      className="relative max-w-sm w-full mx-auto h-[28rem] rounded-xl transition-transform hover:scale-105"
     >
       <motion.div
         style={{
@@ -150,7 +152,7 @@ const Premium: React.FC = () => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative h-[28rem] w-[22rem] mx-auto rounded-xl transition-transform hover:scale-105"
+      className="relative max-w-sm w-full mx-auto h-[28rem] rounded-xl transition-transform hover:scale-105"
     >
       <motion.div
         style={{
@@ -219,7 +221,7 @@ const Mixed: React.FC = () => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative h-[28rem] w-[22rem] mx-auto rounded-xl transition-transform hover:scale-105"
+      className="relative max-w-sm w-full mx-auto h-[28rem] rounded-xl transition-transform hover:scale-105"
     >
       <motion.div
         style={{
