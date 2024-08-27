@@ -1,7 +1,29 @@
 import Footer from "@/components/footer";
 import Nav from "@/components/nav";
 import Card from "@/components/card";
+import type { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions | Moonlit Hosting",
+  description:
+  "Terms of Service for Moonlit Hosting. By using our services, you agree to comply with and be legally bound by the terms and conditions set forth in this legally binding contract.",
+  keywords: [
+    "free minecraft hosing",
+    "hosting",
+    "minecraft",
+    "server",
+    "moonlit hosting",
+    "moonlit",
+    "free",
+    "minecraft server",
+    "minecraft hosting",
+    "minecraft server hosting",
+    "minecraft server",
+    "minecraft server free",
+    "minecraft server free hosting",
+  ],
+};
 export default function Terms() {
   return (
     <div className="relative bg-blue-950 text-white">

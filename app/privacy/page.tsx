@@ -2,6 +2,30 @@ import Footer from "@/components/footer";
 import Nav from "@/components/nav";
 import Card from "@/components/card";
 
+import type { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Moonlit Hosting",
+  description:
+  "Privacy Policy for Moonlit Hosting. We are committed to protecting your personal information and providing a safe and secure hosting experience.",
+  keywords: [
+    "free minecraft hosing",
+    "hosting",
+    "minecraft",
+    "server",
+    "moonlit hosting",
+    "moonlit",
+    "free",
+    "minecraft server",
+    "minecraft hosting",
+    "minecraft server hosting",
+    "minecraft server",
+    "minecraft server free",
+    "minecraft server free hosting",
+  ],
+};
+
 export default function Privacy() {
   return (
     <div className="relative bg-blue-950 text-white">

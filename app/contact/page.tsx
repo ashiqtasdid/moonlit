@@ -5,6 +5,30 @@ import Plan from "@/components/plan";
 import Card from "@/components/card";
 import InfoGrid from "@/components/infoGrid";
 
+import type { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Contact | Moonlit Hosting",
+  description:
+  "Contact Moonlit Hosting for any questions or concerns. We offer a wide range of hosting plans to fit your needs.",
+  keywords: [
+    "free minecraft hosing",
+    "hosting",
+    "minecraft",
+    "server",
+    "moonlit hosting",
+    "moonlit",
+    "free",
+    "minecraft server",
+    "minecraft hosting",
+    "minecraft server hosting",
+    "minecraft server",
+    "minecraft server free",
+    "minecraft server free hosting",
+  ],
+};
+
 export default function Contact() {
   return (
     <div className="relative bg-blue-950">
