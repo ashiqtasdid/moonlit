@@ -184,7 +184,7 @@ const Mixed: React.FC = () => {
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-
+  // DEVELOPED BY MD ASHIQUZZAMAN KHAN
   const xSpring = useSpring(x, { stiffness: 200, damping: 20 });
   const ySpring = useSpring(y, { stiffness: 200, damping: 20 });
 
