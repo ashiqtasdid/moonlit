@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 
 const ServerCart: React.FC = () => {
-  // Set default memory to 8 and cores to 1
   const [memory, setMemory] = useState(8);
   const [cores, setCores] = useState(1);
 
@@ -52,9 +51,7 @@ const ServerCart: React.FC = () => {
               <option key={mark} value={mark} label={`${mark}GB`} />
             ))}
           </datalist>
-          <div className="mt-2 text-blue-500">
-            {memory}GB Premium Minecraft
-          </div>
+          <div className="mt-2 text-blue-500">{memory}GB Premium Minecraft</div>
         </div>
 
         <div className="mb-6">

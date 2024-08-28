@@ -19,7 +19,7 @@ const Nav = () => {
     });
     setTimeout(() => {
       setModalOpen(true);
-    }, 300); // Adjust the timeout if needed
+    }, 300);
   };
 
   const handleCloseModal = () => {
@@ -34,7 +34,7 @@ const Nav = () => {
     });
     setTimeout(() => {
       setModalOpen(true);
-    }, 300); // Adjust the timeout if needed
+    }, 300);
   }, []);
 
   const handleScroll = useCallback(() => {
