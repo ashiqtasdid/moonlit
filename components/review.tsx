@@ -9,7 +9,7 @@ const Review: React.FC = () => {
         <div className="md:pt-24">
           <h1 className="text-5xl font-bold">Don&apos;t Believe our words?</h1>
           <p className="text-md py-5 font-semibold mt-5">
-            We pride ourselves on delivering top-quality services, but don't
+            We pride ourselves on delivering top-quality services, but don&apos;t
             just take our word for it. Here&apos;s a glimpse into what our
             valued customers have experienced and what they have to say about
             working with us:
