@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import {
   motion,
   useMotionTemplate,
@@ -43,6 +43,7 @@ const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
 
 const Basic: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
+  const [hovered, setHovered] = useState(false);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -83,6 +84,8 @@ const Basic: React.FC = () => {
         transformStyle: "preserve-3d",
         transform,
       }}
+      onHoverStart={() => setHovered(true)}
+      onHoverEnd={() => setHovered(false)}
       className="relative max-w-sm w-full mx-auto h-[28rem] rounded-xl transition-transform hover:scale-105"
     >
       <motion.div
@@ -90,21 +93,20 @@ const Basic: React.FC = () => {
           transform: "translateZ(50px)",
           transformStyle: "preserve-3d",
         }}
-        className="absolute inset-0 flex items-center justify-center"
+        className={`absolute inset-0 flex items-center justify-center rounded-xl overflow-hidden ${
+          hovered
+            ? "ring-4 ring-emerald-400 shadow-xl shadow-emerald-400/50"
+            : "ring-0 shadow-xl"
+        }`}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <motion.div
-          className="rounded-xl overflow-hidden ring-0 ring-emerald-400 ring-offset-2 ring-offset-gray-800 shadow-xl shadow-emerald-400/50"
-          whileHover={{ ringWidth: "6px", boxShadow: "0 0 15px #34D399" }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-        >
-          <Image
-            src="/assets/java.jpg"
-            width={350}
-            height={200}
-            alt="JAVA"
-            className="object-cover"
-          />
-        </motion.div>
+        <Image
+          src="/assets/java.jpg"
+          width={350}
+          height={200}
+          alt="JAVA"
+          className="object-cover"
+        />
       </motion.div>
     </motion.div>
   );
@@ -112,6 +114,7 @@ const Basic: React.FC = () => {
 
 const Premium: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
+  const [hovered, setHovered] = useState(false);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -152,6 +155,8 @@ const Premium: React.FC = () => {
         transformStyle: "preserve-3d",
         transform,
       }}
+      onHoverStart={() => setHovered(true)}
+      onHoverEnd={() => setHovered(false)}
       className="relative max-w-sm w-full mx-auto h-[28rem] rounded-xl transition-transform hover:scale-105"
     >
       <motion.div
@@ -159,21 +164,20 @@ const Premium: React.FC = () => {
           transform: "translateZ(50px)",
           transformStyle: "preserve-3d",
         }}
-        className="absolute inset-0 flex items-center justify-center"
+        className={`absolute inset-0 flex items-center justify-center rounded-xl overflow-hidden ${
+          hovered
+            ? "ring-4 ring-blue-500 shadow-xl shadow-blue-500/50"
+            : "ring-0 shadow-xl"
+        }`}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <motion.div
-          className="rounded-xl overflow-hidden ring-0 ring-blue-500 ring-offset-2 ring-offset-gray-800 shadow-xl shadow-blue-500/50"
-          whileHover={{ ringWidth: "6px", boxShadow: "0 0 15px #3B82F6" }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-        >
-          <Image
-            src="/assets/bedrock.jpg"
-            width={350}
-            height={200}
-            alt="BEDROCK"
-            className="object-cover"
-          />
-        </motion.div>
+        <Image
+          src="/assets/bedrock.jpg"
+          width={350}
+          height={200}
+          alt="BEDROCK"
+          className="object-cover"
+        />
       </motion.div>
     </motion.div>
   );
@@ -181,10 +185,11 @@ const Premium: React.FC = () => {
 
 const Mixed: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
+  const [hovered, setHovered] = useState(false);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  // DEVELOPED BY MD ASHIQUZZAMAN KHAN
+
   const xSpring = useSpring(x, { stiffness: 200, damping: 20 });
   const ySpring = useSpring(y, { stiffness: 200, damping: 20 });
 
@@ -221,6 +226,8 @@ const Mixed: React.FC = () => {
         transformStyle: "preserve-3d",
         transform,
       }}
+      onHoverStart={() => setHovered(true)}
+      onHoverEnd={() => setHovered(false)}
       className="relative max-w-sm w-full mx-auto h-[28rem] rounded-xl transition-transform hover:scale-105"
     >
       <motion.div
@@ -228,21 +235,20 @@ const Mixed: React.FC = () => {
           transform: "translateZ(50px)",
           transformStyle: "preserve-3d",
         }}
-        className="absolute inset-0 flex items-center justify-center"
+        className={`absolute inset-0 flex items-center justify-center rounded-xl overflow-hidden ${
+          hovered
+            ? "ring-4 ring-purple-500 shadow-xl shadow-purple-500/50"
+            : "ring-0 shadow-xl"
+        }`}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <motion.div
-          className="rounded-xl overflow-hidden ring-0 ring-purple-500 ring-offset-2 ring-offset-gray-800 shadow-xl shadow-purple-500/50"
-          whileHover={{ ringWidth: "6px", boxShadow: "0 0 15px #8B5CF6" }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-        >
-          <Image
-            src="/assets/bedrock.jpg"
-            width={350}
-            height={200}
-            alt="MIXED"
-            className="object-cover"
-          />
-        </motion.div>
+        <Image
+          src="/assets/bedrock.jpg"
+          width={350}
+          height={200}
+          alt="MIXED"
+          className="object-cover"
+        />
       </motion.div>
     </motion.div>
   );
