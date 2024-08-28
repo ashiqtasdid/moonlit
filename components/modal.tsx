@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface StepModalProps {
   isOpen: boolean;
@@ -43,9 +42,9 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   {/* Card 1 */}
                   <div
-                    className={`bg-gradient-to-b mx-2 my-2 from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-1 ${
+                    className={`bg-gradient-to-b mx-2 my-2 from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 1
-                        ? "border-2 border-emerald-400"
+                        ? "ring-blue-400"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(1)}
@@ -56,15 +55,15 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                     </p>
                     <p className="text-xs">30GB of NVMe Storage</p>
                     <p className="text-xs">24/7 Support + 2 Free Backups</p>
-                    <p className="text-emerald-400 font-bold text-base">
+                    <p className="text-blue-400 font-bold text-base">
                       $5/mo
                     </p>
                   </div>
                   {/* Card 2 */}
                   <div
-                    className={`bg-gradient-to-b  mx-2 my-2  from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-1 ${
+                    className={`bg-gradient-to-b  mx-2 my-2  from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 2
-                        ? "border-2 border-emerald-400"
+                        ? "ring-blue-400"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(2)}
@@ -76,15 +75,15 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                     <p className="text-xs">45GB of NVMe Storage</p>
                     <p className="text-xs">24/7 Support + 5 Free Backups</p>
                     <p className="text-xs">480Gbps DDoS Protection</p>
-                    <p className="text-emerald-400 font-bold text-base">
+                    <p className="text-blue-400 font-bold text-base">
                       $9/mo
                     </p>
                   </div>
                   {/* Card 3 */}
                   <div
-                    className={`bg-gradient-to-b  mx-2 my-2  from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-1 ${
+                    className={`bg-gradient-to-b  mx-2 my-2  from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 3
-                        ? "border-2 border-emerald-400"
+                        ? "ring-blue-400"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(3)}
@@ -96,15 +95,15 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                     <p className="text-xs">100GB of NVMe Storage</p>
                     <p className="text-xs">24/7 Support + 10 Free Backups</p>
                     <p className="text-xs">480Gbps DDoS Protection</p>
-                    <p className="text-emerald-400 font-bold text-base">
+                    <p className="text-blue-400 font-bold text-base">
                       $15/mo
                     </p>
                   </div>
                   {/* Card 4 - Custom */}
                   <div
-                    className={`bg-gradient-to-b mx-2 my-2 from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-1 ${
+                    className={`bg-gradient-to-b mx-2 my-2 from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 4
-                        ? "border-2 border-emerald-400"
+                        ? "ring-blue-400"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(4)}
@@ -130,7 +129,7 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
               <button
                 onClick={handleNextStep}
                 disabled={selectedPackageId === null}
-                className={`bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2 px-4 rounded-md text-xs sm:text-sm ${
+                className={`bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-md text-xs sm:text-sm ${
                   selectedPackageId === null
                     ? "opacity-50 cursor-not-allowed"
                     : ""

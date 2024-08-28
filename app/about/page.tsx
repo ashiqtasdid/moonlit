@@ -1,7 +1,29 @@
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import Card from "@/components/card";
+import type { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: "About | Moonlit Hosting",
+  description:
+  "Moonlit Hosting is a hosting company aimed to provide the best hosting experience for Minecraft servers. We offer a wide range of hosting plans to fit your needs.",
+  keywords: [
+    "free minecraft hosing",
+    "hosting",
+    "minecraft",
+    "server",
+    "moonlit hosting",
+    "moonlit",
+    "free",
+    "minecraft server",
+    "minecraft hosting",
+    "minecraft server hosting",
+    "minecraft server",
+    "minecraft server free",
+    "minecraft server free hosting",
+  ],
+};
 export default function About() {
   return (
     <div className="relative bg-blue-950 text-white">

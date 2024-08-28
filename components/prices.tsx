@@ -24,7 +24,7 @@ const Prices = () => {
         <div className="w-full h-[530px] max-w-xs md:max-w-sm lg:max-w-md hover:ring-2 transition hover:ring-emerald-600 rounded-xl bg-blue-900 text-white">
           <div className="flex justify-between px-6 py-4">
             <div className="text-2xl font-semibold">2GB</div>
-            <div className="text-green-400 font-bold text-md">$5/mo</div>
+            <div className="text-blue-400 font-bold text-md">$5/mo</div>
           </div>
           <div className="px-6 text-gray-500 font-medium">
             Perfect for friends
@@ -39,7 +39,7 @@ const Prices = () => {
               "Available in UK",
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-2">
-                <RiVerifiedBadgeFill className="text-green-400 text-2xl" />
+                <RiVerifiedBadgeFill className="text-blue-400 text-2xl" />
                 <span className="text-md font-semibold">{item}</span>
               </div>
             ))}
@@ -47,7 +47,7 @@ const Prices = () => {
           <div className="pb-4 pt-24 md:pt-36 mx-3">
             <button
               onClick={() => handleOrderClick(1)}
-              className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+              className="w-full rounded-2xl border-2 border-dashed border-black bg-blue-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
             >
               Order now
             </button>
@@ -58,7 +58,7 @@ const Prices = () => {
         <div className="w-full max-w-xs md:max-w-sm lg:max-w-md hover:ring-2 transition hover:ring-emerald-600 rounded-xl bg-blue-900 text-white">
           <div className="flex justify-between px-6 py-4">
             <div className="text-2xl font-semibold">4GB</div>
-            <div className="text-green-400 font-bold text-md">$9/mo</div>
+            <div className="text-blue-400 font-bold text-md">$9/mo</div>
           </div>
           <div className="px-6 text-gray-500 font-medium">
             Ideal for small communities
@@ -76,7 +76,7 @@ const Prices = () => {
               "Available in UK",
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-2">
-                <RiVerifiedBadgeFill className="text-green-400 text-2xl" />
+                <RiVerifiedBadgeFill className="text-blue-400 text-2xl" />
                 <span className="text-md font-semibold">{item}</span>
               </div>
             ))}
@@ -84,7 +84,7 @@ const Prices = () => {
           <div className="py-4 mx-3">
             <button
               onClick={() => handleOrderClick(2)}
-              className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+              className="w-full rounded-2xl border-2 border-dashed border-black bg-blue-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
             >
               Order now
             </button>
@@ -95,7 +95,7 @@ const Prices = () => {
         <div className="w-full max-w-xs md:max-w-sm lg:max-w-md hover:ring-2 transition hover:ring-emerald-600 rounded-xl bg-blue-900 text-white">
           <div className="flex justify-between px-6 py-4">
             <div className="text-2xl font-semibold">8GB</div>
-            <div className="text-green-400 font-bold text-md">$15/mo</div>
+            <div className="text-blue-400 font-bold text-md">$15/mo</div>
           </div>
           <div className="px-6 text-gray-500 font-medium">
             Ideal for growing communities
@@ -113,7 +113,7 @@ const Prices = () => {
               "Available in UK",
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-2">
-                <RiVerifiedBadgeFill className="text-green-400 text-2xl" />
+                <RiVerifiedBadgeFill className="text-blue-400 text-2xl" />
                 <span className="text-md font-semibold">{item}</span>
               </div>
             ))}
@@ -121,7 +121,7 @@ const Prices = () => {
           <div className="py-4 mx-3">
             <button
               onClick={() => handleOrderClick(3)}
-              className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+              className="w-full rounded-2xl border-2 border-dashed border-black bg-blue-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
             >
               Order now
             </button>
@@ -138,7 +138,7 @@ const Prices = () => {
                 <CardContent className="p-0">
                   <div className="flex justify-between px-6 py-4">
                     <div className="text-2xl font-semibold">2GB</div>
-                    <div className="text-green-400 font-bold text-md">
+                    <div className="text-blue-400 font-bold text-md">
                       $5/mo
                     </div>
                   </div>
@@ -155,7 +155,7 @@ const Prices = () => {
                       "Available in UK",
                     ].map((item, index) => (
                       <div key={index} className="flex items-center space-x-2">
-                        <RiVerifiedBadgeFill className="text-green-400 text-2xl" />
+                        <RiVerifiedBadgeFill className="text-blue-400 text-2xl" />
                         <span className="text-md font-semibold">{item}</span>
                       </div>
                     ))}
@@ -163,7 +163,7 @@ const Prices = () => {
                   <div className="pb-4 pt-24 md:pt-36 mx-3">
                     <button
                       onClick={() => handleOrderClick(1)}
-                      className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+                      className="w-full rounded-2xl border-2 border-dashed border-black bg-blue-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
                     >
                       Order now
                     </button>
@@ -176,7 +176,7 @@ const Prices = () => {
                 <CardContent className="p-0">
                   <div className="flex justify-between px-6 py-4">
                     <div className="text-2xl font-semibold">4GB</div>
-                    <div className="text-green-400 font-bold text-md">
+                    <div className="text-blue-400 font-bold text-md">
                       $9/mo
                     </div>
                   </div>
@@ -196,7 +196,7 @@ const Prices = () => {
                       "Available in UK",
                     ].map((item, index) => (
                       <div key={index} className="flex items-center space-x-2">
-                        <RiVerifiedBadgeFill className="text-green-400 text-2xl" />
+                        <RiVerifiedBadgeFill className="text-blue-400 text-2xl" />
                         <span className="text-md font-semibold">{item}</span>
                       </div>
                     ))}
@@ -204,7 +204,7 @@ const Prices = () => {
                   <div className="py-4 mx-3">
                     <button
                       onClick={() => handleOrderClick(2)}
-                      className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+                      className="w-full rounded-2xl border-2 border-dashed border-black bg-blue-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
                     >
                       Order now
                     </button>
@@ -217,7 +217,7 @@ const Prices = () => {
                 <CardContent className="p-0">
                   <div className="flex justify-between px-6 py-4">
                     <div className="text-2xl font-semibold">8GB</div>
-                    <div className="text-green-400 font-bold text-md">
+                    <div className="text-blue-400 font-bold text-md">
                       $15/mo
                     </div>
                   </div>
@@ -237,7 +237,7 @@ const Prices = () => {
                       "Available in UK",
                     ].map((item, index) => (
                       <div key={index} className="flex items-center space-x-2">
-                        <RiVerifiedBadgeFill className="text-green-400 text-2xl" />
+                        <RiVerifiedBadgeFill className="text-blue-400 text-2xl" />
                         <span className="text-md font-semibold">{item}</span>
                       </div>
                     ))}
@@ -245,7 +245,7 @@ const Prices = () => {
                   <div className="py-4 mx-3">
                     <button
                       onClick={() => handleOrderClick(3)}
-                      className="w-full rounded-2xl border-2 border-dashed border-black bg-green-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+                      className="w-full rounded-2xl border-2 border-dashed border-black bg-blue-500 text-white px-6 py-2 font-semibold uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
                     >
                       Order now
                     </button>

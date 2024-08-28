@@ -97,7 +97,7 @@ const Nav = () => {
             </button>
             <button
               onClick={handleOpenModal}
-              className="bg-emerald-700 text-sm font-semibold text-white px-2.5 py-1.5 rounded-2xl"
+              className="bg-sky-600 text-sm font-semibold text-white px-2.5 py-1.5 rounded-2xl"
             >
               Create server
             </button>

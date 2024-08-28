@@ -25,7 +25,7 @@ const MinecraftHero = () => {
           transition={{ duration: 0.6 }}
           className="text-white text-5xl md:text-6xl font-bold tracking-tight leading-tight"
         >
-          Let&apos;s play <span className="text-emerald-400">Minecraft</span>
+          Let&apos;s play <span className="text-blue-400">Minecraft</span>
         </m.h1>
         <m.h2
           initial={{ opacity: 0, x: -50 }}
@@ -43,7 +43,7 @@ const MinecraftHero = () => {
         >
           <button
             onClick={handleOpenModal}
-            className="text-sm flex space-x-2 md:text-base bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-1.5 px-6 rounded-full"
+            className="text-sm flex space-x-2 md:text-base bg-blue-500 hover:bg-blue-400 text-white font-bold py-1.5 px-6 rounded-full"
           >
             <span className="text-xl pr-2">
               <LuSwords />

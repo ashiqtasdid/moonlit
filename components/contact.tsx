@@ -137,7 +137,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ Icon, href }) => {
         style={{
           clipPath: BOTTOM_RIGHT_CLIP,
         }}
-        className="absolute inset-0 grid place-content-center bg-green-600 text-white transition-transform duration-300 ease-out"
+        className="absolute inset-0 grid place-content-center bg-blue-500 text-white transition-transform duration-300 ease-out"
       >
         <Icon className="text-xl sm:text-3xl md:text-4xl" />
       </div>
