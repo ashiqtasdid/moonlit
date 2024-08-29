@@ -10,8 +10,8 @@ import Image from "next/image";
 
 const Packages = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-36 md:gap-6">
+    <div className="max-w-7xl mx-auto px-4 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-36 md:gap-10">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ const Basic: React.FC = () => {
       }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      className="relative max-w-sm w-full mx-auto h-[28rem] rounded-xl transition-transform hover:scale-105"
+      className="relative max-w-sm w-full mx-auto h-[32rem] rounded-xl transition-transform hover:scale-105"
     >
       <motion.div
         style={{
@@ -102,8 +102,8 @@ const Basic: React.FC = () => {
       >
         <Image
           src="/assets/java.jpg"
-          width={350}
-          height={200}
+          width={385}
+          height={230}
           alt="JAVA"
           className="object-cover"
         />
@@ -157,7 +157,7 @@ const Premium: React.FC = () => {
       }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      className="relative max-w-sm w-full mx-auto h-[28rem] rounded-xl transition-transform hover:scale-105"
+      className="relative max-w-sm w-full mx-auto h-[32rem] rounded-xl transition-transform hover:scale-105"
     >
       <motion.div
         style={{
@@ -173,8 +173,8 @@ const Premium: React.FC = () => {
       >
         <Image
           src="/assets/bedrock.jpg"
-          width={350}
-          height={200}
+          width={385}
+          height={230}
           alt="BEDROCK"
           className="object-cover"
         />
@@ -228,7 +228,7 @@ const Mixed: React.FC = () => {
       }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      className="relative max-w-sm w-full mx-auto h-[28rem] rounded-xl transition-transform hover:scale-105"
+      className="relative max-w-sm w-full mx-auto h-[32rem] rounded-xl transition-transform hover:scale-105"
     >
       <motion.div
         style={{
@@ -244,8 +244,8 @@ const Mixed: React.FC = () => {
       >
         <Image
           src="/assets/bedrock.jpg"
-          width={350}
-          height={200}
+          width={385}
+          height={230}
           alt="MIXED"
           className="object-cover"
         />

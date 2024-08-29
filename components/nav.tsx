@@ -62,18 +62,18 @@ const Nav = () => {
       } transition-all duration-300`}
       animate={controls}
     >
-      <div className="flex justify-between items-center mx-10">
-        <div className="flex py-1 space-x-5 items-center">
-          <Link href="/" aria-label="Home">
+      <div className="flex justify-between items-center mx-10 max-w-[1650px] w-full lg:mx-auto">
+        <Link href="/" aria-label="Home">
+          <div className="flex py-1 space-x-5 items-center">
             <motion.div
               whileHover={{ scale: 1.2, rotate: 360 }}
               transition={{ duration: 1 }}
             >
               <Image src="/assets/logo.png" width={50} height={50} alt="logo" />
             </motion.div>
-          </Link>
-          <div className="text-lg font-semibold">Moonlit Hosting</div>
-        </div>
+            <div className="text-lg font-semibold">Moonlit Hosting</div>
+          </div>
+        </Link>
 
         <div className="hidden md:flex space-x-5">
           <Link href="/" className="font-semibold">
@@ -97,7 +97,7 @@ const Nav = () => {
             </button>
             <button
               onClick={handleOpenModal}
-              className="bg-sky-600 text-sm font-semibold text-white px-2.5 py-1.5 rounded-2xl"
+              className="bg-gray-900 text-sm font-semibold text-white px-2.5 py-1.5 rounded-2xl"
             >
               Create server
             </button>

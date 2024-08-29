@@ -26,6 +26,10 @@ const config = {
           700: "#081721",
           600: "#111921",
         },
+        gray: {
+          950: "#041119",
+          900: "#7851A9",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

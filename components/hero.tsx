@@ -15,7 +15,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="text-white md:mx-72 text-6xl font-bold"
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-400 to-blue-200 ">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-400 to-blue-200">
             <BubbleText />
           </span>{" "}
           is a better way to play together
@@ -35,13 +35,13 @@ const Hero = () => {
           className="pt-5"
         >
           <Link href={"/create-minecraft-server"}>
-            <button className="text-sm bg-sky-600 hover:bg-sky-800 text-white font-bold py-2 px-4 rounded-full mt-5">
-              Minecraft Hosting 
+            <button className="text-sm bg-gray-900 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full mt-5">
+              Minecraft Hosting
             </button>
           </Link>
           <Link href={"/create-minecraft-server"}>
             <button className="text-sm bg-gray-500 ring-2 ring-gray-600 text-white bg-opacity-50 hover:ring-gray-400 font-bold py-2 px-4 rounded-full mt-5 ml-5">
-              Managed 
+              Managed
             </button>
           </Link>
         </m.div>
@@ -54,7 +54,7 @@ export default Hero;
 
 const BubbleText = () => {
   return (
-    <h2 className="text-center text-5xl font-thin bg-clip-text bg-gradient-to-r from-blue-600 via-blue-400 to-blue-200 ">
+    <h2 className="text-center text-5xl font-thin text-gray-900">
       {"Moonlit".split("").map((child, idx) => (
         <span className={styles.hoverText} key={idx}>
           {child}

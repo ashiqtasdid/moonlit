@@ -4,15 +4,15 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 
 const Review: React.FC = () => {
   return (
-    <div className="text-white py-36 mx-10">
+    <div className="text-white mx-auto max-w-[1240px] py-36 ">
       <div className="grid grid-cols-1 md:grid-cols-2  gap-10">
         <div className="md:pt-24">
           <h1 className="text-5xl font-bold">Don&apos;t Believe our words?</h1>
           <p className="text-md py-5 font-semibold mt-5">
-            We pride ourselves on delivering top-quality services, but don&apos;t
-            just take our word for it. Here&apos;s a glimpse into what our
-            valued customers have experienced and what they have to say about
-            working with us:
+            We pride ourselves on delivering top-quality services, but
+            don&apos;t just take our word for it. Here&apos;s a glimpse into
+            what our valued customers have experienced and what they have to say
+            about working with us:
           </p>
         </div>
         <div className="flex items-center justify-center z-0 md:justify-end">

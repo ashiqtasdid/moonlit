@@ -7,7 +7,7 @@ const MotionProgress = motion(Progress);
 
 const Feature = () => {
   return (
-    <div className="text-white flex justify-center px-4 sm:px-6 lg:px-8">
+    <div className="text-white flex max-w-[1310px] mx-auto justify-center px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         <div className="col-span-1 md:col-span-2 ring-1 rounded-xl ring-slate-700 ring-opacity-30 bg-gradient-to-b from-blue-950 to-blue-900 p-6">
           <h1 className="font-semibold text-lg md:text-xl lg:text-2xl pb-6">
@@ -24,13 +24,13 @@ const Feature = () => {
                 </div>
               </div>
               <div className="space-y-1 w-full md:w-auto">
-                <p className="text-blue-400">AMD Ryzen 7950X</p>
+                <p className="text-gray-900">AMD Ryzen 7950X</p>
                 <MotionProgress
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
                   transition={{ duration: 1 }}
                   value={0}
-                  className="h-2 bg-blue-500"
+                  className="h-2 bg-gray-900"
                 />
               </div>
             </li>

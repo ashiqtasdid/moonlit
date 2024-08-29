@@ -7,11 +7,10 @@ import InfoGrid from "@/components/infoGrid";
 
 import type { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: "Contact | Moonlit Hosting",
   description:
-  "Contact Moonlit Hosting for any questions or concerns. We offer a wide range of hosting plans to fit your needs.",
+    "Contact Moonlit Hosting for any questions or concerns. We offer a wide range of hosting plans to fit your needs.",
   keywords: [
     "free minecraft hosing",
     "hosting",
@@ -35,15 +34,19 @@ export default function Contact() {
       <div className="sticky top-0 z-10">
         <Nav />
       </div>
-      <div className="pt-36 text-white mx-4 md:mx-28">
-        <h1 className="text-6xl font-bold ">How can we help?</h1>
-        <p className="pt-5 font-semibold text-lg">
-          Any questions or concerns? Don&apos;t hesitate to get in touch!
-        </p>
+      <div className="py-36 text-white bg-gray-950 ">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-6xl font-bold">How can we help?</h1>
+          <p className="pt-5 font-semibold text-gray-300 text-lg">
+            Any questions or concerns? Don&apos;t hesitate to get in touch!
+          </p>
+        </div>
       </div>
-      <InfoGrid/>
-      <Plan />
-      <Card />
+      <div className="max-w-7xl mx-auto">
+        <InfoGrid />
+        <Plan />
+        <Card />
+      </div>
       <Footer />
     </div>
   );
