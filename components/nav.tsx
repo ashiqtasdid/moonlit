@@ -3,7 +3,7 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence, useAnimation } from "framer-motion";
+import { motion as m, AnimatePresence, useAnimation } from "framer-motion";
 import StepModal from "@/components/modal";
 import CountdownTimer from "./countdowntimer";
 
@@ -55,7 +55,7 @@ const Nav = () => {
   }, [scrolled, controls]);
 
   return (
-    <motion.nav
+    <m.nav
       className={`pb-3 w-full fixed top-0 z-10 text-white ${
         scrolled
           ? "backdrop-filter backdrop-blur-md border-b-2 border-gray-700"
@@ -63,19 +63,19 @@ const Nav = () => {
       } transition-all duration-300`}
       animate={controls}
     >
-      <CountdownTimer/>
+      <CountdownTimer />
       <div className="flex justify-between items-center pt-1 mx-10">
         <div className="flex py-1 space-x-5 items-center">
-          <Link href="/" aria-label="Home">
-            <motion.div
+          <Link href="/" className="flex space-x-5" aria-label="Home">
+            <m.div
               whileHover={{ scale: 1.2, rotate: 360 }}
               transition={{ duration: 1 }}
             >
               <Image src="/assets/logo.png" width={50} height={50} alt="logo" />
-            </motion.div>
-            <div className="text-lg font-semibold">Moonlit Hosting</div>
-          </div>
-        </Link>
+            </m.div>
+            <div className="text-lg font-semibold pt-3">Moonlit Hosting</div>
+          </Link>
+        </div>
 
         <div className="hidden md:flex space-x-5">
           <Link href="/" className="font-semibold">
@@ -130,7 +130,7 @@ const Nav = () => {
 
       <AnimatePresence>
         {isOpen && (
-          <motion.div
+          <m.div
             initial={{ y: "-100%" }}
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
@@ -198,10 +198,10 @@ const Nav = () => {
                 onClick={toggleMenu}
               ></button>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </m.nav>
   );
 };
 

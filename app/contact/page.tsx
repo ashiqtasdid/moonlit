@@ -31,7 +31,7 @@ export default function Contact() {
       <div className="sticky top-0 z-10">
         <Nav />
       </div>
-      <div className="py-36 text-white bg-gray-950 ">
+      <div className="py-36 text-white bg-blue-950">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-6xl font-bold">How can we help?</h1>
           <p className="pt-5 font-semibold text-gray-300 text-lg">
