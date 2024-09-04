@@ -1,8 +1,5 @@
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
-import ContactC from "@/components/contact";
-import Plan from "@/components/plan";
-import Card from "@/components/card";
 import InfoGrid from "@/components/infoGrid";
 
 import type { Metadata } from "next";
@@ -42,8 +39,7 @@ export default function Contact() {
         </p>
       </div>
       <InfoGrid/>
-      <Plan />
-      <Card />
+ 
       <Footer />
     </div>
   );

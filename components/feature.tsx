@@ -1,14 +1,22 @@
 "use client";
 
 import { Progress } from "@/components/ui/progress";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import Image from "next/image";
+import { useRef } from "react";
 
 const MotionProgress = motion(Progress);
 
 const Feature = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <div className="text-white flex justify-center px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[970px] mx-auto"
+        ref={ref}
+      >
         <div className="col-span-1 md:col-span-2 ring-1 rounded-xl ring-slate-700 ring-opacity-30 bg-gradient-to-b from-blue-950 to-blue-900 p-6">
           <h1 className="font-semibold text-lg md:text-xl lg:text-2xl pb-6">
             Better bang for your buck
@@ -16,28 +24,41 @@ const Feature = () => {
           <ul className="space-y-4">
             <li className="flex flex-col md:flex-row justify-between items-start md:items-center py-2">
               <div className="flex items-center mb-4 md:mb-0">
-                {/* Replace with actual icons/images */}
-                <div className="w-6 h-6 bg-gray-500 rounded-full mr-4"></div>
+                <div className="w-12 h-12 rounded-full mr-4">
+                  <Image
+                    src="/assets/logo.png"
+                    height={100}
+                    width={100}
+                    alt="moonlit"
+                  />
+                </div>
                 <div>
                   <p>Moonlit Hosting</p>
                   <p className="text-sm text-gray-400">$2/GB</p>
                 </div>
               </div>
               <div className="space-y-1 w-full md:w-auto">
-                <p className="text-blue-400">AMD Ryzen 7950X</p>
+                <p className="text-purple-400">AMD Ryzen 7950X</p>
                 <MotionProgress
                   initial={{ width: 0 }}
-                  animate={{ width: "100%" }}
+                  animate={isInView ? { width: "100%" } : { width: 0 }}
                   transition={{ duration: 1 }}
                   value={0}
-                  className="h-2 bg-blue-500"
+                  className="h-2 bg-purple-500"
                 />
               </div>
             </li>
             <hr />
             <li className="flex flex-col md:flex-row justify-between items-start md:items-center py-2">
               <div className="flex items-center mb-4 md:mb-0">
-                <div className="w-6 h-6 bg-gray-500 rounded-full mr-4"></div>
+                <div className="w-12 h-12 rounded-full mr-4">
+                  <Image
+                    src="/assets/apexhosting.webp"
+                    height={100}
+                    width={100}
+                    alt="moonlit"
+                  />
+                </div>
                 <div>
                   <p>Apex Hosting</p>
                   <p className="text-sm text-gray-400">$5/GB</p>
@@ -47,7 +68,7 @@ const Feature = () => {
                 <p className="text-yellow-400">AMD Ryzen 5800X</p>
                 <MotionProgress
                   initial={{ width: 0 }}
-                  animate={{ width: "70%" }}
+                  animate={isInView ? { width: "70%" } : { width: 0 }}
                   transition={{ duration: 1 }}
                   value={0}
                   className="h-2 bg-yellow-500"
@@ -57,7 +78,14 @@ const Feature = () => {
             <hr />
             <li className="flex flex-col md:flex-row justify-between items-start md:items-center py-2">
               <div className="flex items-center mb-4 md:mb-0">
-                <div className="w-6 h-6 bg-gray-500 rounded-full mr-4"></div>
+                <div className="w-12 h-12 rounded-full mr-4">
+                  <Image
+                    src="/assets/bisecthosting.webp"
+                    height={100}
+                    width={100}
+                    alt="moonlit"
+                  />
+                </div>
                 <div>
                   <p>Bisect Hosting</p>
                   <p className="text-sm text-gray-400">$5/GB</p>
@@ -67,7 +95,7 @@ const Feature = () => {
                 <p className="text-yellow-400">Intel Xeon E5-2643</p>
                 <MotionProgress
                   initial={{ width: 0 }}
-                  animate={{ width: "60%" }}
+                  animate={isInView ? { width: "60%" } : { width: 0 }}
                   transition={{ duration: 1 }}
                   value={0}
                   className="h-2 bg-yellow-400"
@@ -77,7 +105,14 @@ const Feature = () => {
             <hr />
             <li className="flex flex-col md:flex-row justify-between items-start md:items-center py-2">
               <div className="flex items-center mb-4 md:mb-0">
-                <div className="w-6 h-6 bg-gray-500 rounded-full mr-4"></div>
+                <div className="w-12 h-12 rounded-full mr-4">
+                  <Image
+                    src="/assets/shockbyte.webp"
+                    height={100}
+                    width={100}
+                    alt="moonlit"
+                  />
+                </div>
                 <div>
                   <p>Shockbyte</p>
                   <p className="text-sm text-gray-400">$2.5/GB</p>
@@ -87,7 +122,7 @@ const Feature = () => {
                 <p className="text-red-400">Intel Xeon E-22360</p>
                 <MotionProgress
                   initial={{ width: 0 }}
-                  animate={{ width: "45%" }}
+                  animate={isInView ? { width: "45%" } : { width: 0 }}
                   transition={{ duration: 1 }}
                   value={0}
                   className="h-2 bg-red-500"
@@ -95,7 +130,7 @@ const Feature = () => {
               </div>
             </li>
           </ul>
-          <div className="pt-9 font-bold text-gray-300">
+          <div className="pt-16 font-bold text-gray-300">
             We are the best and affordable hosting solution for you. Get started
             today! Have fun while paying less and getting more.
           </div>

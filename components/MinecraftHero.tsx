@@ -43,7 +43,7 @@ const MinecraftHero = () => {
         >
           <button
             onClick={handleOpenModal}
-            className="text-sm flex space-x-2 md:text-base bg-blue-500 hover:bg-blue-400 text-white font-bold py-1.5 px-6 rounded-full"
+            className="text-sm flex space-x-2 md:text-base bg-gray-950 hover:bg-purple-500 text-white font-bold py-1.5 px-6 rounded-full"
           >
             <span className="text-xl pr-2">
               <LuSwords />

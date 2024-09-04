@@ -15,46 +15,42 @@ const Footer = () => {
         </div>
         <div className="text-center">
           <ul className="flex flex-wrap justify-center md:justify-start text-sm font-semibold text-gray-400 space-x-3">
-            <li>
+            <li className="hover:text-white">
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li className="hover:text-white">
               <Link href="/about">About</Link>
             </li>
-            <li>
+            <li className="hover:text-white">
               <Link href="/contact">Contact</Link>
             </li>
-            <li>
+            <li className="hover:text-white">
               <Link href="/privacy">Privacy</Link>
             </li>
-            <li>
+            <li className="hover:text-white">
               <Link href="/terms">Terms</Link>
             </li>
           </ul>
         </div>
         <div>
           <ul className="flex justify-center md:justify-end text-xl font-semibold text-gray-400 space-x-3">
-            <li>
+            <li className="hover:text-white">
               <a
                 href="
-              https://discord.gg/GRmdaV4w"
+              https://moonlitservers.com/discord"
                 target="_blank"
               >
                 <FaDiscord />
               </a>
             </li>
-            <li>
-              <a href="https://twitter.com">
-                <FaSquareXTwitter />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com">
+
+            <li className="hover:text-white">
+              <a href="https://moonlitservers.com/github">
                 <FaGithub />
               </a>
             </li>
-            <li>
-              <a href="https://www.trustpilot.com">
+            <li className="hover:text-white">
+              <a href="https://moonlitservers.com/trustpilot">
                 <SiTrustpilot />
               </a>
             </li>

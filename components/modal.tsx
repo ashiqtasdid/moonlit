@@ -44,7 +44,7 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                   <div
                     className={`bg-gradient-to-b mx-2 my-2 from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 1
-                        ? "ring-blue-400"
+                        ? "ring-gray-950"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(1)}
@@ -55,7 +55,7 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                     </p>
                     <p className="text-xs">30GB of NVMe Storage</p>
                     <p className="text-xs">24/7 Support + 2 Free Backups</p>
-                    <p className="text-blue-400 font-bold text-base">
+                    <p className="text-gray-950 font-bold text-base">
                       $5/mo
                     </p>
                   </div>
@@ -63,7 +63,7 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                   <div
                     className={`bg-gradient-to-b  mx-2 my-2  from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 2
-                        ? "ring-blue-400"
+                        ? "ring-gray-950"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(2)}
@@ -75,7 +75,7 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                     <p className="text-xs">45GB of NVMe Storage</p>
                     <p className="text-xs">24/7 Support + 5 Free Backups</p>
                     <p className="text-xs">480Gbps DDoS Protection</p>
-                    <p className="text-blue-400 font-bold text-base">
+                    <p className="text-gray-950 font-bold text-base">
                       $9/mo
                     </p>
                   </div>
@@ -83,7 +83,7 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                   <div
                     className={`bg-gradient-to-b  mx-2 my-2  from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 3
-                        ? "ring-blue-400"
+                        ? "ring-gray-950"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(3)}
@@ -95,7 +95,7 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                     <p className="text-xs">100GB of NVMe Storage</p>
                     <p className="text-xs">24/7 Support + 10 Free Backups</p>
                     <p className="text-xs">480Gbps DDoS Protection</p>
-                    <p className="text-blue-400 font-bold text-base">
+                    <p className="text-gray-950 font-bold text-base">
                       $15/mo
                     </p>
                   </div>
@@ -103,7 +103,7 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
                   <div
                     className={`bg-gradient-to-b mx-2 my-2 from-blue-950 to-transparent p-4 rounded-lg shadow-md text-left font-semibold cursor-pointer ring-2 ${
                       selectedPackageId === 4
-                        ? "ring-blue-400"
+                        ? "ring-gray-950"
                         : "ring-gray-600"
                     }`}
                     onClick={() => handleCardClick(4)}
@@ -129,7 +129,7 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
               <button
                 onClick={handleNextStep}
                 disabled={selectedPackageId === null}
-                className={`bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-md text-xs sm:text-sm ${
+                className={`bg-gray-950 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded-md text-xs sm:text-sm ${
                   selectedPackageId === null
                     ? "opacity-50 cursor-not-allowed"
                     : ""

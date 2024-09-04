@@ -22,12 +22,12 @@ const ServerCart: React.FC = () => {
   };
 
   return (
-    <div className="py-20">
-      <div className="bg-gradient-to-b from-blue-950 to-blue-900 ring-slate-700 ring-opacity-30 ring-1 text-white p-8 rounded-lg max-w-lg mx-auto shadow-lg">
+    <div className="">
+      <div className="h-[550px] bg-gradient-to-b from-blue-950 to-blue-900 ring-slate-700 ring-opacity-30 ring-1 text-white p-8 rounded-lg max-w-lg mx-auto shadow-lg">
         <h2 className="text-lg font-semibold mb-4">
           {memory}GB Premium Minecraft Server | {cores} Threads
         </h2>
-
+        <hr className="border-gray-600 my-6" />
         <div className="mb-6">
           <label className="block text-sm font-medium mb-2">Memory</label>
           <input
@@ -39,7 +39,9 @@ const ServerCart: React.FC = () => {
             onChange={handleMemoryChange}
             className="w-full appearance-none h-2 rounded-lg"
             style={{
-              background: `linear-gradient(to right, #3b82f6 ${((memory - 4) / 28) * 100}%, #4b5563 0%)`,
+              background: `linear-gradient(to right, #7851A9 ${
+                ((memory - 4) / 28) * 100
+              }%, #4b5563 0%)`,
               WebkitAppearance: "none",
             }}
           />
@@ -51,8 +53,9 @@ const ServerCart: React.FC = () => {
               <option key={mark} value={mark} label={`${mark}GB`} />
             ))}
           </datalist>
-          <div className="mt-2 text-blue-500">{memory}GB Premium Minecraft</div>
+          <div className="mt-2 text-purple-500">{memory}GB Premium Minecraft</div>
         </div>
+        <hr className="border-gray-600 my-6" />
 
         <div className="mb-6">
           <label className="block text-sm font-medium mb-2">Threads</label>
@@ -65,7 +68,9 @@ const ServerCart: React.FC = () => {
             onChange={handleCoresChange}
             className="w-full appearance-none h-2 rounded-lg"
             style={{
-              background: `linear-gradient(to right, #3b82f6 ${((cores - 1) / 4) * 100}%, #4b5563 0%)`,
+              background: `linear-gradient(to right, #7851A9 ${
+                ((cores - 1) / 4) * 100
+              }%, #4b5563 0%)`,
               WebkitAppearance: "none",
             }}
           />
@@ -77,14 +82,15 @@ const ServerCart: React.FC = () => {
               <option key={mark} value={mark} label={`${mark}`} />
             ))}
           </datalist>
-          <div className="mt-2 text-blue-500">{cores} Additional Threads</div>
+          <div className="mt-2 text-purple-500">{cores} Additional Threads</div>
         </div>
+        <hr className="border-gray-600 my-6" />
 
         <div className="flex justify-between items-center mt-8">
           <div className="text-xl font-semibold">
             ${totalPrice.toFixed(2)}/month
           </div>
-          <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded">
+          <button className="bg-gray-950 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded">
             Order
           </button>
         </div>

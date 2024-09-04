@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import StepModal from "@/components/modal";
+import CountdownTimer from "./countdowntimer";
 
 const Nav = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -55,14 +56,15 @@ const Nav = () => {
 
   return (
     <motion.nav
-      className={`py-3 w-full fixed top-0 z-10 text-white ${
+      className={`pb-3 w-full fixed top-0 z-10 text-white ${
         scrolled
           ? "backdrop-filter backdrop-blur-md border-b-2 border-gray-700"
           : "bg-transparent"
       } transition-all duration-300`}
       animate={controls}
     >
-      <div className="flex justify-between items-center mx-10">
+      <CountdownTimer/>
+      <div className="flex justify-between items-center pt-1 mx-10">
         <div className="flex py-1 space-x-5 items-center">
           <Link href="/" aria-label="Home">
             <motion.div
@@ -97,7 +99,7 @@ const Nav = () => {
             </button>
             <button
               onClick={handleOpenModal}
-              className="bg-sky-600 text-sm font-semibold text-white px-2.5 py-1.5 rounded-2xl"
+              className="bg-gray-950 text-sm font-semibold text-white px-2.5 py-1.5 rounded-2xl"
             >
               Create server
             </button>

@@ -4,7 +4,7 @@ import React from "react";
 
 const Banner: React.FC = () => {
   return (
-    <div className="relative h-48 w-full max-w-4xl rounded-xl mx-auto my-12 md:my-36 px-4">
+    <div className="relative h-48 w-full max-w-5xl rounded-xl mx-auto my-12 md:my-36 px-4">
       <div
         className="absolute inset-0 bg-cover bg-center rounded-xl"
         style={{ backgroundImage: "url('/assets/minecraft-4.jpeg')" }}
@@ -17,7 +17,7 @@ const Banner: React.FC = () => {
             Get a server
           </h1>
           <h2 className="text-xl md:text-2xl -my-1 md:-my-3 font-bold text-white mb-4">
-            <span className="text-white pr-1 md:pr-2">in</span>Seconds
+            <span className="text-white pr-1 md:pr-2">in</span><span className="bg-gradient-to-b from-purple-600 to-purple-300 bg-clip-text text-transparent">Seconds</span>
           </h2>
         </div>
         <div className="flex-none  md:pb-4 pb-4 md:mt-0">

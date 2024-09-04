@@ -6,19 +6,16 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="h-screen bg-[url('/assets/background.jpg')] bg-cover bg-center relative">
+    <div className="h-[600px] bg-[url('/assets/background.jpg')] bg-cover bg-center relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-950 backdrop-blur-sm"></div>
       <div className="relative text-center align-middle flex flex-col justify-center h-full">
         <m.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-white md:mx-72 text-6xl font-bold"
+          className="text-white md:mx-0 text-6xl font-semibold"
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-400 to-blue-200 ">
-            <BubbleText />
-          </span>{" "}
-          is a better way to play together
+          Craft, Create, Conquer with <span className="bg-gradient-to-b from-emerald-400 to-slate-300 text-transparent bg-clip-text">Moonlit</span>
         </m.h1>
         <m.h2
           initial={{ opacity: 0, x: -50 }}
@@ -35,13 +32,13 @@ const Hero = () => {
           className="pt-5"
         >
           <Link href={"/create-minecraft-server"}>
-            <button className="text-sm bg-sky-600 hover:bg-sky-800 text-white font-bold py-2 px-4 rounded-full mt-5">
+            <button className="text-sm bg-gray-950 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded-full mt-5">
               Minecraft Hosting 
             </button>
           </Link>
-          <Link href={"/create-minecraft-server"}>
+          <Link href={"/about"}>
             <button className="text-sm bg-gray-500 ring-2 ring-gray-600 text-white bg-opacity-50 hover:ring-gray-400 font-bold py-2 px-4 rounded-full mt-5 ml-5">
-              Managed 
+              About
             </button>
           </Link>
         </m.div>
@@ -51,15 +48,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-const BubbleText = () => {
-  return (
-    <h2 className="text-center text-5xl font-thin bg-clip-text bg-gradient-to-r from-blue-600 via-blue-400 to-blue-200 ">
-      {"Moonlit".split("").map((child, idx) => (
-        <span className={styles.hoverText} key={idx}>
-          {child}
-        </span>
-      ))}
-    </h2>
-  );
-};
