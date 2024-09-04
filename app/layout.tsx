@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
   title: "Home | Moonlit Hosting",
   description:
@@ -18,6 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={GeistSans.className}>
         {children}
+        <SpeedInsights/>
+        <Analytics/>
       </body>
     </html>
   );
