@@ -73,9 +73,9 @@ const Nav = () => {
             >
               <Image src="/assets/logo.png" width={50} height={50} alt="logo" />
             </motion.div>
-          </Link>
-          <div className="text-lg font-semibold">Moonlit Hosting</div>
-        </div>
+            <div className="text-lg font-semibold">Moonlit Hosting</div>
+          </div>
+        </Link>
 
         <div className="hidden md:flex space-x-5">
           <Link href="/" className="font-semibold">

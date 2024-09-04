@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="py-5">
+    <div className="py-5 max-w-[1650px] mx-auto">
       <div className="flex flex-col md:flex-row items-center md:justify-between text-white mx-5 md:mx-10 space-y-5 md:space-y-0">
         <div className="flex space-x-3 items-center">
           <Image src="/assets/logo.png" width={50} height={50} alt="logo" />
