@@ -176,7 +176,7 @@ const Nav = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/servers" onClick={toggleMenu}>
+                <Link href="#pricing" onClick={toggleMenu}>
                   Pricing
                 </Link>
               </li>

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const cardVariants = {
   initial: {
@@ -31,9 +32,15 @@ const HoverCard = () => {
       <div className='mx-36'>
 
       <div className='md:grid hidden md:grid-cols-3'>
+        <Link href={'/create-minecraft-server'}>
         <Java />
+        </Link>
+        <Link href={'/create-minecraft-server'}>
         <Bedrock />
+        </Link>
+        <Link href={'/create-terraria-server'}>
         <Terraria />
+        </Link>
       </div>
       <div className='grid md:hidden space-y-20 grid-cols-1'>
         <Image src='/assets/java.jpg' alt='Java' width={300} height={300} />

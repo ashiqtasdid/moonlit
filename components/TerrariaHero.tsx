@@ -5,7 +5,7 @@ import { LuSwords } from "react-icons/lu";
 import { useState } from "react";
 import StepModal from "@/components/modal";
 
-const MinecraftHero = () => {
+const TerrariaHero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -16,7 +16,7 @@ const MinecraftHero = () => {
     setModalOpen(false);
   };
   return (
-    <div className="h-[600px] bg-[url('/assets/minecraft-5.jpeg')] bg-cover bg-center relative">
+    <div className="h-[600px] bg-[url('/assets/terraria.jpg')] bg-cover bg-center relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-950 backdrop-blur-sm"></div>
       <div className="relative text-left flex flex-col mx-auto max-w-[1100px] justify-center h-full pl-8 md:pl-16">
         <m.h1
@@ -25,7 +25,10 @@ const MinecraftHero = () => {
           transition={{ duration: 0.6 }}
           className="text-white text-5xl md:text-6xl font-bold tracking-tight leading-tight"
         >
-          Let&apos;s play <span className="bg-gradient-to-b from-purple-400 to-slate-300 text-transparent bg-clip-text">Minecraft</span>
+          Let&apos;s play{" "}
+          <span className="bg-gradient-to-b from-purple-400 to-slate-300 text-transparent bg-clip-text">
+            Terraria
+          </span>
         </m.h1>
         <m.h2
           initial={{ opacity: 0, x: -50 }}
@@ -33,7 +36,9 @@ const MinecraftHero = () => {
           transition={{ duration: 0.6 }}
           className="text-gray-300 pt-6 text-xl md:text-2xl font-medium"
         >
-          Multiplayer worlds hosted on the best hardware on the market
+          Boss fights with your friends
+          <br />
+          have never been easier
         </m.h2>
         <m.div
           initial={{ opacity: 0, y: 50 }}
@@ -57,4 +62,4 @@ const MinecraftHero = () => {
   );
 };
 
-export default MinecraftHero;
+export default TerrariaHero;

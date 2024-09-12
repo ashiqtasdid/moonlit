@@ -4,7 +4,7 @@ import React from "react";
 
 const Banner: React.FC = () => {
   return (
-    <div className="relative h-48 w-full max-w-5xl rounded-xl mx-auto my-12 md:my-36 px-4">
+    <div className="relative h-48 w-full max-w-5xl rounded-xl mx-auto my-12 md:mb-36 px-4">
       <div
         className="absolute inset-0 bg-cover bg-center rounded-xl"
         style={{ backgroundImage: "url('/assets/minecraft-4.jpeg')" }}

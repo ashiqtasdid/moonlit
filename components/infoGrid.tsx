@@ -75,7 +75,7 @@ const InfoGrid: React.FC = () => {
               </div>
             </div>
           </Link>
-          <Link href="#">
+          <Link href="http://billing.moonlitservers.com/index.php?rp=/knowledgebase">
             <div className="bg-blue-900 font-semibold hover:ring-2 hover:ring-purple-500 py-[30px] px-5 rounded-md shadow-lg transition duration-300 ease-in-out flex items-center">
               <TbDeviceDesktopExclamation className="text-7xl mr-4 text-purple-400" />
               <div>

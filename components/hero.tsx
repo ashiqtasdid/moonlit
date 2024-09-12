@@ -15,7 +15,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="text-white md:mx-0 text-6xl font-semibold"
         >
-          Craft, Create, Conquer with <span className="bg-gradient-to-b from-emerald-400 to-slate-300 text-transparent bg-clip-text">Moonlit</span>
+          Craft, Create, Conquer with <span className="bg-gradient-to-b from-purple-400 to-slate-300 text-transparent bg-clip-text">Moonlit</span>
         </m.h1>
         <m.h2
           initial={{ opacity: 0, x: -50 }}
@@ -31,9 +31,9 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="pt-5"
         >
-          <Link href={"/create-minecraft-server"}>
+          <Link href={"#play"}>
             <button className="text-sm bg-gray-950 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded-full mt-5">
-              Minecraft Hosting 
+              Our Servers
             </button>
           </Link>
           <Link href={"/about"}>

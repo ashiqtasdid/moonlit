@@ -39,7 +39,7 @@ export default function About() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-950"></div>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold relative z-0">
-          <span className="bg-gradient-to-b from-emerald-400 to-emerald-200 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-b from-purple-400 to-purple-200 bg-clip-text text-transparent">
             Moonlit
           </span>
         </h1>

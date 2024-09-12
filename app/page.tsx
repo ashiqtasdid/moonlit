@@ -14,7 +14,7 @@ export default function Home() {
         <Nav />
       </div>
       <Hero />
-      <div className="bg-blue-950 text-center py-10">
+      <div className="bg-blue-950 text-center py-10" id="play">
         <div className="flex items-center justify-center space-x-4">
           <span className="block h-px w-16 bg-gradient-to-r from-transparent to-gray-600"></span>
           <div className="text-gray-400 text-sm font-semibold tracking-wide">
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </div>
       <Feature />
-      <div className="bg-blue-950 text-center pt-20">
+      <div className="bg-blue-950 text-center pt-20" id="pricing">
         <div className="flex items-center justify-center space-x-4">
           <span className="block h-px w-16 bg-gradient-to-r from-transparent to-gray-600"></span>
           <div className="text-gray-500 text-sm font-semibold tracking-wide">

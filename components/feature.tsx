@@ -138,7 +138,7 @@ const Feature = () => {
         <div className="space-y-6">
           <div className="ring-1 rounded-xl ring-slate-700 ring-opacity-30 bg-gradient-to-b from-blue-950 to-blue-900 p-6">
             <h2 className="font-semibold text-lg md:text-xl lg:text-2xl">
-              99.95% Uptime SLA
+              99.99% Uptime SLA
             </h2>
             <p className="text-sm md:text-base text-gray-400">
               Our services are designed to be reliable and always available,
@@ -157,7 +157,7 @@ const Feature = () => {
           </div>
           <div className="ring-1 rounded-xl ring-slate-700 ring-opacity-30 bg-gradient-to-b from-blue-950 to-blue-900 p-6">
             <h2 className="font-semibold text-lg md:text-xl lg:text-2xl">
-              Upgrade at Any Time
+              Upgrade at any time
             </h2>
             <p className="text-sm md:text-base text-gray-400">
               Scale your resources effortlessly whenever your needs grow. Our
