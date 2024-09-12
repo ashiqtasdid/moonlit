@@ -10,7 +10,7 @@ const ServerCart: React.FC = () => {
 
   const memoryPrice = memory * 2;
   const corePrice = cores * 5; // Updated to $5 per additional thread
-  const ipPrice = dedicatedIPs * 2; // Let's say each dedicated IP costs $2
+  const ipPrice = dedicatedIPs * 2.5; // Let's say each dedicated IP costs $2
   const totalPrice = memoryPrice + corePrice + ipPrice;
 
   const memoryMarks = [4, 8, 12, 16, 20, 24, 28, 32];
