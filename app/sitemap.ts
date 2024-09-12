@@ -4,32 +4,37 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   
     return [
       {
-        url: `https://moonlistservers.com/`,
+        url: `https://moonlitservers.com/`,
         lastModified: new Date(),
         priority: 1,
       },
       {
-        url: `https://moonlistservers.com/create-minecraft-server`,
+        url: `https://moonlitservers.com/create-minecraft-server`,
         lastModified: new Date(),
         priority: 0.9,
       },
       {
-        url: `https://moonlistservers.com/about`,
+        url: `https://moonlitservers.com/create-terraria-server`,
         lastModified: new Date(),
         priority: 0.9,
       },
       {
-        url: `https://moonlistservers.com/contact`,
+        url: `https://moonlitservers.com/about`,
         lastModified: new Date(),
         priority: 0.9,
       },
       {
-        url: `https://moonlistservers.com/privacy`,
+        url: `https://moonlitservers.com/contact`,
         lastModified: new Date(),
         priority: 0.9,
       },
       {
-        url: `https://moonlistservers.com/terms`,
+        url: `https://moonlitservers.com/privacy`,
+        lastModified: new Date(),
+        priority: 0.9,
+      },
+      {
+        url: `https://moonlitservers.com/terms`,
         lastModified: new Date(),
         priority: 0.9,
       },
