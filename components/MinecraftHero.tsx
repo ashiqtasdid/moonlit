@@ -4,6 +4,7 @@ import { motion as m } from "framer-motion";
 import { LuSwords } from "react-icons/lu";
 import { useState } from "react";
 import StepModal from "@/components/modal";
+import Link from "next/link";
 
 const MinecraftHero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -25,7 +26,10 @@ const MinecraftHero = () => {
           transition={{ duration: 0.6 }}
           className="text-white text-5xl md:text-6xl font-bold tracking-tight leading-tight"
         >
-          Let&apos;s play <span className="bg-gradient-to-b from-purple-400 to-slate-300 text-transparent bg-clip-text">Minecraft</span>
+          Let&apos;s play{" "}
+          <span className="bg-gradient-to-b from-purple-400 to-slate-300 text-transparent bg-clip-text">
+            Minecraft
+          </span>
         </m.h1>
         <m.h2
           initial={{ opacity: 0, x: -50 }}
@@ -41,15 +45,14 @@ const MinecraftHero = () => {
           transition={{ duration: 0.6 }}
           className="pt-10"
         >
-          <button
-            onClick={handleOpenModal}
-            className="text-sm flex space-x-2 md:text-base bg-gray-950 hover:bg-purple-500 text-white font-bold py-1.5 px-6 rounded-full"
-          >
-            <span className="text-xl pr-2">
-              <LuSwords />
-            </span>{" "}
-            Create server
-          </button>
+          <Link href="/minecraft#plans">
+            <button className="text-sm flex space-x-2 md:text-base bg-gray-950 hover:bg-purple-500 text-white font-bold py-1.5 px-6 rounded-full">
+              <span className="text-xl pr-2">
+                <LuSwords />
+              </span>{" "}
+              Create server
+            </button>
+          </Link>
           <StepModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </m.div>
       </div>

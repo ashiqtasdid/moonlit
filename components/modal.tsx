@@ -22,7 +22,7 @@ const StepModal: React.FC<StepModalProps> = ({ isOpen, onClose }) => {
     if (selectedPackageId === null) return;
 
     if (selectedPackageId === 4) {
-      router.push("/create-minecraft-server");
+      router.push("/minecraft");
     } else {
       console.log(`Selected Package ID: ${selectedPackageId}`);
     }

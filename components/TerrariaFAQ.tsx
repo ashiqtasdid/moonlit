@@ -15,10 +15,10 @@ const TerrariaFAQ = () => {
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1" className="border-gray-400">
             <AccordionTrigger className="text-white">
-              Why should I choose Lilypad to host my Terraria server?
+              Why should I choose Moonlit to host my Terraria server?
             </AccordionTrigger>
             <AccordionContent className="text-gray-400">
-              Lilypad offers top-tier server hosting with high uptime, easy mod
+              Moonlit offers top-tier server hosting with high uptime, easy mod
               support, and a dedicated team for troubleshooting.
             </AccordionContent>
           </AccordionItem>
@@ -38,7 +38,7 @@ const TerrariaFAQ = () => {
               For what platforms can I host a Terraria server?
             </AccordionTrigger>
             <AccordionContent className="text-gray-400">
-              Terraria servers hosted on Lilypad can support all major platforms
+              Terraria servers hosted on Moonlit can support all major platforms
               including PC, Mac, and Linux.
             </AccordionContent>
           </AccordionItem>

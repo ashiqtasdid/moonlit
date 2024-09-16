@@ -94,16 +94,11 @@ const Nav = () => {
 
         <div className="flex space-x-3 items-center">
           <div className="hidden md:flex space-x-3">
+            <Link href={'https://billing.moonlitservers.com/index.php?rp=/login'} target="_blank">
             <button className="bg-white font-semibold text-sm text-black px-2.5 py-1.5 rounded-2xl">
               Log in
             </button>
-            <button
-              onClick={handleOpenModal}
-              className="bg-gray-950 text-sm font-semibold text-white px-2.5 py-1.5 rounded-2xl"
-            >
-              Create server
-            </button>
-            <StepModal isOpen={isModalOpen} onClose={handleCloseModal} />
+            </Link>
           </div>
           <button
             onClick={toggleMenu}

@@ -4,6 +4,7 @@ import { motion as m } from "framer-motion";
 import { LuSwords } from "react-icons/lu";
 import { useState } from "react";
 import StepModal from "@/components/modal";
+import Link from "next/link";
 
 const TerrariaHero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -46,16 +47,16 @@ const TerrariaHero = () => {
           transition={{ duration: 0.6 }}
           className="pt-10"
         >
+          <Link href="/terraria#plans">
           <button
-            onClick={handleOpenModal}
             className="text-sm flex space-x-2 md:text-base bg-gray-950 hover:bg-purple-500 text-white font-bold py-1.5 px-6 rounded-full"
-          >
+            >
             <span className="text-xl pr-2">
               <LuSwords />
             </span>{" "}
             Create server
           </button>
-          <StepModal isOpen={isModalOpen} onClose={handleCloseModal} />
+            </Link>
         </m.div>
       </div>
     </div>

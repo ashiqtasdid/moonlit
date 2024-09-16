@@ -4,13 +4,17 @@ import { Progress } from "@/components/ui/progress";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
+import React, { useState } from "react";
 
 const MotionProgress = motion(Progress);
 
 const Feature = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
+  const [edition, setEdition] = useState("Minecraft Java Edition"); // New state for edition selection
+  const handleEditionChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setEdition(event.target.value);
+  };
   return (
     <div className="text-white flex justify-center px-4 sm:px-6 lg:px-8">
       <div
@@ -131,8 +135,7 @@ const Feature = () => {
             </li>
           </ul>
           <div className="pt-16 font-bold text-gray-300">
-            We are the best and affordable hosting solution for you. Get started
-            today! Have fun while paying less and getting more.
+          Experience the unbeatable performance, at affordable prices!
           </div>
         </div>
         <div className="space-y-6">

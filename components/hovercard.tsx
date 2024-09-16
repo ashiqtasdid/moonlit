@@ -32,13 +32,13 @@ const HoverCard = () => {
       <div className='mx-36'>
 
       <div className='md:grid hidden md:grid-cols-3'>
-        <Link href={'/create-minecraft-server'}>
+        <Link href={'/minecraft'}>
         <Java />
         </Link>
-        <Link href={'/create-minecraft-server'}>
+        <Link href={'/minecraft'}>
         <Bedrock />
         </Link>
-        <Link href={'/create-terraria-server'}>
+        <Link href={'/terraria'}>
         <Terraria />
         </Link>
       </div>

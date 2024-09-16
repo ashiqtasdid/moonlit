@@ -9,12 +9,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 1,
       },
       {
-        url: `https://moonlitservers.com/create-minecraft-server`,
+        url: `https://moonlitservers.com/minecraft`,
         lastModified: new Date(),
         priority: 0.9,
       },
       {
-        url: `https://moonlitservers.com/create-terraria-server`,
+        url: `https://moonlitservers.com/terraria`,
         lastModified: new Date(),
         priority: 0.9,
       },

@@ -21,7 +21,7 @@ const Banner: React.FC = () => {
           </h2>
         </div>
         <div className="flex-none  md:pb-4 pb-4 md:mt-0">
-          <Link href="/create-minecraft-server">
+          <Link href="/minecraft">
             <Button />
           </Link>
         </div>

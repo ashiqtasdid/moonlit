@@ -36,11 +36,11 @@ const Prices = () => {
               </div>
             </div>
             <p>Perfect for friends, includes:</p>
-            <ul className="list-disc ml-6">
-              <li>2 Threads for Ryzen 7950X3D [Shared]</li>
+            <ul className="list-none ml-6">
+              <li>2 Threads for Ryzen 7950X3D</li>
               <li>Unlimited NVMe Storage</li>
-              <li>24/7 Support + Unlimited Free Backups</li>
-              <li>Shared CPU Threads</li>
+              <li>24/7 Support</li>
+              <li>Free Offsite Backups              </li>
               <li>99.9% Uptime Guarantee</li>
               <li>Available in UK</li>
             </ul>
@@ -65,7 +65,7 @@ const Prices = () => {
               </div>
             </div>
             <p>Ideal for small communities, includes:</p>
-            <ul className="list-disc ml-6">
+            <ul className="list-none ml-6">
               <li>2 Threads for Ryzen 7950X3D [Shared]</li>
               <li>Unlimited NVMe Storage</li>
               <li>24/7 Support + Unlimited Free Backups</li>
@@ -94,7 +94,7 @@ const Prices = () => {
               </div>
             </div>
             <p>Ideal for growing communities, includes:</p>
-            <ul className="list-disc ml-6">
+            <ul className="list-none ml-6">
               <li>2 Threads for Ryzen 7950X3D [Shared]</li>
               <li>Unlimited NVMe Storage</li>
               <li>24/7 Support + Unlimited Free Backups</li>
@@ -123,7 +123,7 @@ const Prices = () => {
               </div>
             </div>
             <p>Ideal for large communities, includes:</p>
-            <ul className="list-disc ml-6">
+            <ul className="list-none ml-6">
               <li>2 Threads for Ryzen 7950X3D [Shared]</li>
               <li>Unlimited NVMe Storage</li>
               <li>24/7 Support + Unlimited Free Backups</li>

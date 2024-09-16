@@ -44,7 +44,9 @@ export default function Minecraft() {
           <span className="block h-px w-16 bg-gradient-to-l from-transparent to-gray-600"></span>
         </div>
       </div>
+      <div id="plans">
       <Prices />
+      </div>
       <MinecraftFeatures />
       <Plan />
       <Footer />

@@ -37,7 +37,7 @@ const Footer = () => {
             <li className="hover:text-white">
               <a
                 href="
-              https://moonlitservers.com/discord"
+              /invite/discord"
                 target="_blank"
               >
                 <FaDiscord />
@@ -45,12 +45,12 @@ const Footer = () => {
             </li>
 
             <li className="hover:text-white">
-              <a href="https://moonlitservers.com/github">
+              <a href="/invite/github">
                 <FaGithub />
               </a>
             </li>
             <li className="hover:text-white">
-              <a href="https://moonlitservers.com/trustpilot">
+              <a href="/invite/trustpilot">
                 <SiTrustpilot />
               </a>
             </li>
