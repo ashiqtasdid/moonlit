@@ -93,6 +93,13 @@ const Nav = () => {
         </div>
 
         <div className="flex space-x-3 items-center">
+          <div className="hidden md:invisible space-x-3">
+            <Link href={'#'}>
+            <button className="bg-white font-semibold text-sm text-black px-2.5 py-1.5 rounded-2xl">
+              Log in
+            </button>
+            </Link>
+          </div>
           <div className="hidden md:flex space-x-3">
             <Link href={'https://billing.moonlitservers.com/index.php?rp=/login'} target="_blank">
             <button className="bg-white font-semibold text-sm text-black px-2.5 py-1.5 rounded-2xl">
