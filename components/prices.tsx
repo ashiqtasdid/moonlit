@@ -51,7 +51,7 @@ const Prices = () => {
               <li>Available in UK</li>
             </ul>
             <div className="pt-2">
-              <Link href={'http://billing.moonlitservers.com/index.php?rp=/store/minecraft/minecraft-hosting-4gb'}>
+              <Link href={'https://billing.moonlitservers.com/cart.php?a=confproduct&i=0'}>
               <button
                 onClick={() => handleOrderClick(1)}
                 className="bg-purple-600 hover:bg-purple-700 rounded-lg px-4 py-2 text-white font-semibold transition duration-200"
@@ -82,7 +82,7 @@ const Prices = () => {
               <li>Available in UK</li>
             </ul>
             <div className="pt-2">
-              <Link href={'http://billing.moonlitservers.com/index.php?rp=/store/minecraft/minecraft-hosting-8gb'}>
+              <Link href={'https://billing.moonlitservers.com/cart.php?a=confproduct&i=0'}>
               <button
                 onClick={() => handleOrderClick(1)}
                 className="bg-purple-600 hover:bg-purple-700 rounded-lg px-4 py-2 text-white font-semibold transition duration-200"
@@ -113,7 +113,7 @@ const Prices = () => {
               <li>Available in UK</li>
             </ul>
             <div className="pt-2">
-              <Link href={'http://billing.moonlitservers.com/index.php?rp=/store/minecraft/minecraft-hosting-12gb'}>
+              <Link href={'https://billing.moonlitservers.com/cart.php?a=confproduct&i=0'}>
               <button
                 onClick={() => handleOrderClick(1)}
                 className="bg-purple-600 hover:bg-purple-700 rounded-lg px-4 py-2 text-white font-semibold transition duration-200"
@@ -146,7 +146,7 @@ const Prices = () => {
             <div className="pt-2">
               <Link
                 href={
-                  "http://billing.moonlitservers.com/index.php?rp=/store/minecraft/16gb"
+                  "https://billing.moonlitservers.com/cart.php?a=confproduct&i=0"
                 }
               >
                 <button
